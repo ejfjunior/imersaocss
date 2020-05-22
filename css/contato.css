@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:teal;
+    display: block;
+    margin: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 260px 5fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 'header main';
+    height: 100vh;
+}
+
+.container .menu {
+    align-items: center;
+    display: flex;
+    font-family: 'Major Mono Display', monospace;
+    height: 100vh;
+    justify-content: center;
+    margin: auto;
+}
+
+.menu-superior a {
+    color: #B0C4DE;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 20px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a {
+    color: #B0C4DE;;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+	text-decoration: wavy; 
+}
+
+header {
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    backdrop-filter: invert(14%);
+    background-size: auto 100vh;
+    height: 650px;
+    width: 250px;
+    position: fixed;
+    grid-area: header;
+}
+
+h3 {
+    color: #B0C4DE;
+    margin-top: -30px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+main {
+    margin-left: 3em;
+    font-size: 0.9em;
+}
+
+main {
+    font-family: 'Cutive Mono', monospace;
+    margin-right: 5em;
+    margin-left: 3em;
+    grid-area: main;
+}
+
+.fab, .fa {
+    font-weight: 400;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fab, .fa {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.icons {
+    display: grid;
+    gap: 70px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    grid-template-columns: 180px 180px 180px 180px;
+    font-size: 100px;
+}

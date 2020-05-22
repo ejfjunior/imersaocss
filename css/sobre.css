@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 260px 5fr;
+    grid-template-rows: 100%;
+    height: 100vh;
+    grid-template-areas: 'header main';
+}
+
+.container .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Major Mono Display', monospace;
+}
+
+h3 {
+    color: #B0C4DE;
+    margin-top: -30px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu-superior li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.menu-superior a {
+    color: #B0C4DE;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 20px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu-superior li {
+    list-style: none;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+header {
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    backdrop-filter: invert(14%);
+    background-size: auto 100vh;
+    height: 650px;
+    width: 250px;
+    position: fixed;
+    grid-area: header;
+}
+/**/
+@media (max-width: 643px)
+main {
+    margin-left: 6em;
+    margin-right: 3em;
+}
+@media (max-width: 900px)
+
+main {
+    margin-left: 3em;
+    font-size: 0.9em;
+}
+
+main {
+    font-family: 'Cutive Mono', monospace;
+    margin-right: 5em;
+    margin-left: 3em;
+    grid-area: main;
+}
+
+main {
+    display: block;
+}
+/**/
+@media (max-width: 556px)
+.foto {
+    float: none;
+    margin-left: -200px;
+    margin-top: 1em;
+}
+@media (max-width: 783px)
+.foto {
+    width: 150px;
+}
+@media (max-width: 1200px)
+.foto {
+    margin: 2em;
+    margin-top: 5em;
+}
+.foto {
+    width: 170px;
+    border-radius: 50%;
+    float: right;
+    margin: 2em;
+    margin-top: -7em;
+}
+
+p{
+    text-align: justify;
+}
